@@ -3,4 +3,9 @@ nav {
 	button { @extend .navbar-toggle; }
 	#menu { @extend .collapse, .navbar-collapse; }
   ul { @extend .nav, .navbar-nav; }
+
+  img {
+    height: 24px;
+    margin-top: -2px;
+  }
 }

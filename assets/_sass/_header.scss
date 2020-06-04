@@ -2,13 +2,15 @@ header {
   display: block;
   width: 100%;
   text-align: center;
-  background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+  // https://unsplash.com/photos/LDh4LAV2Duc
+  background: url('images/braden-collum-LDh4LAV2Duc-unsplash.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 
   .headline { padding: 120px 0; }
+  .buttons { padding: 20px 0; }
 
   h1 {
     font-size: 130px;
@@ -17,29 +19,53 @@ header {
   }
 
   h2 {
-    font-size: 77px;
+    font-size: 50px;
     background: #fff;
     background: rgba(255,255,255,0.9);
   }
 
-  @media(max-width:1200px) {
-    h1 { font-size: 140px; }
-    h2 { font-size: 63px; }
+  img {
+    height: 123px;
+    vertical-align: top;
+    margin-top: 10px;
   }
 
-  @media(max-width:991px) {
-    h1 { font-size: 105px; }
+  @media(max-width:1200px) {
+    h1 { font-size: 130px; }
     h2 { font-size: 50px; }
   }
 
-  @media(max-width:668px) {
+  @media(max-width:991px) {
+    h1 { font-size: 95px; }
+    h2 { font-size: 40px; }
+
+    img {
+      height: 90px;
+      vertical-align: top;
+      margin-top: 8px;
+    }
+  }
+
+  @media(max-width:800px) {
     h1 { font-size: 70px; }
     h2 { font-size: 32px; }
+
+    img {
+      height: 64px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
   }
 
   @media(max-width:640px) {
     .headline { padding: 75px 0 25px 0; }
-    h1 { font-size: 60px; }
-    h2 { font-size: 30px; }
+    h1 { font-size: 50px; }
+    h2 { font-size: 20px; }
+
+    img {
+      height: 44px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
   }
 }

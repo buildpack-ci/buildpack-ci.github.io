@@ -3,11 +3,11 @@ main {
   section { overflow: hidden; }
 
   img {
-    @extend .img-circle;
+    //@extend .img-circle;
     @extend .img-responsive;
 
-    &.pull-left {  margin-right: 40px;  }
-    &.pull-right {  margin-left: 40px;  }
+    &.pull-left {  margin-right: 40px; width: 35%; }
+    &.pull-right {  margin-left: 40px; width: 35%; }
   }
 
   h2 {
@@ -20,8 +20,8 @@ main {
     h2 { font-size: 35px; }
 
     img {
-      &.pull-left { margin-right: 20px; }
-      &.pull-right { margin-left: 20px; }
+      &.pull-left { margin-right: 20px; width: 35%; }
+      &.pull-right { margin-left: 20px; width: 35%; }
     }
   }
 
@@ -31,14 +31,19 @@ main {
 
     img {
       max-width: 50%;
-      &.pull-left { margin-right: 10px; }
-      &.pull-right { margin-left: 10px; }
+      &.pull-left { margin-right: 10px; width: 35%; }
+      &.pull-right { margin-left: 10px; width: 35%; }
     }
   }
 
   @media(max-width:768px) {
     hr { margin: 40px 0; }
     h2 { font-size: 25px; }
+
+    img {
+      &.pull-left { width: 50%; }
+      &.pull-right { width: 50%; }
+    }
   }
 
   @media(max-width:668px) {
@@ -54,11 +59,13 @@ main {
       &.pull-left {
         margin-right: 0;
         margin-bottom: 10px;
+        width: 30%;
       }
 
       &.pull-right {
         margin-bottom: 10px;
         margin-left: 0;
+        width: 30%;
       }
     }
   }
